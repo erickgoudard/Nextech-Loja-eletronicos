@@ -6,8 +6,8 @@
     --text-primary: #f8fafc;
     --text-secondary: #94a3b8;
     --accent-purple: #0018f2;
-    --accent-purple-hover: #02007e;
-    --accent-cyan: #00c194;
+    --accent-purple-hover: #0400d5;
+    --accent-cyan: #00c14d;
     --accent-gradient: linear-gradient(135deg, #8b5cf6 0%, #7d00a7 100%);
     --border-color: #2a354d;
     --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
@@ -546,8 +546,8 @@ section {
 }
 
 .review-avatar {
-    width: 64px;
-    height: 64px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid var(--accent-purple);
