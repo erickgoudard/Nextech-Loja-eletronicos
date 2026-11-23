@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nextech store - lojas eletronicas</title>
+    <!-- Ícones FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Fontes Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <a href="#inicio" class="logo"><i class="fas fa-gamepad"></i> Nextech</a>
+
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="#avaliacoes">Avaliações</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-actions">
+            <button type="button" class="icon-btn" id="theme-toggle" title="Alternar Tema">
+                <i class="fas fa-sun" id="theme-icon"></i>
+            </button>
+
+            <button type="button" class="icon-btn" onclick="openModal('login-modal')">
+                <i class="fas fa-user"></i> <span id="user-label">Login</span>
+            </button>
+
+            <button type="button" class="icon-btn" onclick="openModal('cart-modal')">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-badge" id="cart-count">0</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- INÍCIO -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>seu proximo nível começa aqui 🚀 </h1>
+            <p>Venha conhecer a NEXTECH STORE! Aqui você encontra PCs Gamer, acessórios, periféricos e tudo o que precisa para levar sua experiência tecnológica ao outro nível.
+               COMPRE AGORA
+            </p>
+            <a href="#catalogo" class="btn-primary">Explorar Catálogo</a>
+        </div>
+        <div class="hero-image">
+            <img src="img/INICIO.jpeg" alt="Setup Gamer">
+        </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre">
+        <h2 class="section-title">Por que escolher a NexTech?</h2>
+        <p class="section-subtitle">A NEXTECH STORE nasceu da paixão por tecnologia e inovação. Nosso objetivo é aproximar você do melhor do universo gamer e eletrônico, oferecendo PCs Gamer, acessórios e produtos tecnológicos para todos os estilos.
+          Estamos aqui para conectar você ao futuro!
+        </p>
+
+        <div class="about-grid">
+            <div class="about-card">
+                <i class="fas fa-microchip"></i>
+                <h3>Hardware Selecionado</h3>
+                <p>Trabalhamos apenas com componentes originais e testados rigorosamente antes do envio.</p>
+            </div>
+            <div class="about-card">
+                <i class="fas fa-shipping-fast"></i>
+                <h3>Entrega Expressa</h3>
+                <p>Embalagem reforçada anti-impacto e envio imediato para todo o Brasil com rastreio.</p>
+            </div>
+            <div class="about-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Garantia &amp; Suporte</h3>
+                <p>Suporte técnico especializado e garantia de até 12 meses em todos os computadores e acessórios.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATÁLOGO -->
+    <section id="catalogo">
+        <h2 class="section-title">Catálogo </h2>
+        <p class="section-subtitle">Escolha os melhores equipamentos para a sua máquina.</p>
+
+        <div class="catalog-filters">
+            <button type="button" class="filter-btn active" onclick="filterProducts('todos', this)">Todos</button>
+            <button type="button" class="filter-btn" onclick="filterProducts('Gamer', this)">Gamer</button>
+            <button type="button" class="filter-btn" onclick="filterProducts('perifericos', this)">Perifericos</button>
+            <button type="button" class="filter-btn" onclick="filterProducts('acessorios', this)">Acessórios</button>
+        </div>
+
+        <div class="products-grid" id="products-container">
+            <!-- #1 - gamer -->
+            <div class="product-card" data-category="gamer">
+                <img src="" alt="PC Gamer Valkyrie RTX 4070" class="product-img">
+                <div class="product-info">
+                    <span class="product-category">gamer</span>
+                    <h3 class="product-title">PC Gamer Completo </h3>
+                    <p class="product-desc">Intel Core i7 13700F, 32GB RAM DDR5, SSD NVMe 1TB, Water Cooler RGB e RTX 4070 12GB.</p>
+                    <button type="button" class="desc-btn" onclick="openProductDetails(1)">
+                        <i class="fas fa-info-circle"></i> Descrição
+                    </button>
+                    <div class="product-footer">
+                        <span class="product-price">R$ 3.799,98</span>
+                        <button type="button" class="add-cart-btn" onclick="addToCart(1)">
+                            <i class="fas fa-cart-plus"></i> Comprar
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- #2 - COMPUTADORES -->
+            <div class="product-card" data-category="computadores">
+                <img src="img/nintendo-switch.webp" alt="PC Gamer Starter Ryzen 5" class="product-img">
+                <div class="product-info">
+                    <span class="product-category">computadores</span>
+                    <h3 class="product-title">PC Gamer Starter Ryzen 5</h3>
+                    <p class="product-desc">AMD Ryzen 5 5600, 16GB RAM DDR4, SSD 512GB, RTX 4060 8GB. Ideal para jogos competitivos.</p>
+                    <button type="button" class="desc-btn" onclick="openProductDetails(2)">
+                        <i class="fas fa-info-circle"></i> Descrição
+                    </button>
+                    <div class="product-footer">
+                        <span class="product-price">R$ 4.299,00</span>
+                        <button type="button" class="add-cart-btn" onclick="addToCart(2)">
+                            <i class="fas fa-cart-plus"></i> Comprar
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- #3 - COMPUTADORES -->
+            <div class="product-card" data-category="computa">
+                <img src="img/xbox-series-x.webp" alt="XBOX Series X" class="product-img">
+                <div class="product-info">
+                    <span class="product-category">Console</span>
+                    <h3 class="product-title"></h3>
+                    <p class="product-desc">.</p>
+                    <button type="button" class="desc-btn" onclick="openProductDetails(3)">
+                        <i class="fas fa-info-circle"></i> Descrição
+                    </button>
+                    <div class="product-footer">
+                        <span class="product-price">R$ 11.490,00</span>
+                        <button type="button" class="add-cart-btn" onclick="addToCart(3)">
+                            <i class="fas fa-cart-plus"></i> Comprar
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- #4 - COMPUTADORES -->
+            <div class="product-card" data-category="computadores">
+                <img src="img/ps5.webp" alt="PC Gamer Streamer Pro Ryzen 7" class="product-img">
+                <div class="product-info">
+                    <span class="product-category">computadores</span>
+                    <h3 class="product-title">PC Gamer Streamer Pro Ryzen 7</h3>
+                    <p class="product-desc">AMD Ryzen 7 7700X, 32GB RAM DDR5, SSD NVMe 1TB, RTX 4060 Ti 16GB. Perfeito para jogar e fazer live.</p>
+                    <button type="button" class="desc-btn" onclick="openProductDetails(4)">
+                        <i class="fas fa-info-circle"></i> Descrição
+                    </button>
+                    <div class="product-footer">
+                        <span class="product-price">R$ 6.499,00</span>
+                        <button type="button" class="add-cart-btn" onclick="addToCart(4)">
+                            <i class="fas fa-cart-plus"></i> Comprar
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- #5 - ACESSÓRIOS -->
+            <div class="product-card" data-category="acessorios">
+                <img src="img/Fone.jpg" alt="Fone bluetooth Roxo" class="product-img">
+                <div class="product-info">
+                    <span class="product-category">acessorios</span>
+                    <h3 class="product-title">Teclado Mecânico Phantom RGB</h3>
+                    <p class="product-desc">Switches magnéticos ultra-rápidos, formato 65%, keycaps PBT Double-Shot e iluminação RGB.</p>
+                    <button type="button" class="desc-btn" onclick="openProductDetails(5)">
+                        <i class="fas fa-info-circle"></i> Descrição
+                    </button>
+                    <div class="product-footer">
+                        <span class="product-price">R$ 389,90</span>
+                        <button type="button" class="add-cart-btn" onclick="addToCart(5)">
+                            <i class="fas fa-cart-plus"></i> Comprar
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- #6 - PERIFÉRICOS -->
+            <div class="product-card" data-category="perifericos">
+                <img src="img/Mouse.jpg" alt="Mouse Gamer Wireless Viper Pro" class="product-img">
+                <div class="product-info">
+                    <span class="product-category">perifericos</span>
+                    <h3 class="product-title">Mouse Gamer Wireless Viper Pro</h3>
+                    <p class="product-desc">Sensor óptico 26.000 DPI, peso ultraleve de 54g e bateria de até 70 horas sem fio.</p>
+                    <button type="button" class="desc-btn" onclick="openProductDetails(6)">
+                        <i class="fas fa-info-circle"></i> Descrição
+                    </button>
+                    <div class="product-footer">
+                        <span class="product-price">R$ 329,00</span>
+                        <button type="button" class="add-cart-btn" onclick="addToCart(6)">
+                            <i class="fas fa-cart-plus"></i> Comprar
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- #7 - PERIFÉRICOS -->
+            <div class="product-card" data-category="perifericos">
+                <img src="img/Placa Mae.jpg" alt="Placa Mae &quot; QHD 240Hz" class="product-img">
+                <div class="product-info">
+                    <span class="product-category">perifericos</span>
+                    <h3 class="product-title">Placa mae</h3>
+                    <p class="product-desc">Painel IPS 27 polegadas, resolução Quad HD, 240Hz, 1ms GTG e compatível com G-Sync.</p>
+                    <button type="button" class="desc-btn" onclick="openProductDetails(7)">
+                        <i class="fas fa-info-circle"></i> Descrição
+                    </button>
+                    <div class="product-footer">
+                        <span class="product-price">R$ 2.199,00</span>
+                        <button type="button" class="add-cart-btn" onclick="addToCart(7)">
+                            <i class="fas fa-cart-plus"></i> Comprar
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- #8 - PERIFÉRICOS -->
+            <div class="product-card" data-category="perifericos">
+                <img src="img/Teclado.jpg" alt="Teclado Mecânico TKL Shadow" class="product-img">
+                <div class="product-info">
+                    <span class="product-category">perifericos</span>
+                    <h3 class="product-title">Teclado Mecânico TKL Shadow</h3>
+                    <p class="product-desc">Layout compacto TKL sem teclado numérico, switches lineares silenciosos e cabo USB-C removível.</p>
+                    <button type="button" class="desc-btn" onclick="openProductDetails(8)">
+                        <i class="fas fa-info-circle"></i> Descrição
+                    </button>
+                    <div class="product-footer">
+                        <span class="product-price">R$ 135,99 Promoção</span>
+                        <button type="button" class="add-cart-btn" onclick="addToCart(8)">
+                            <i class="fas fa-cart-plus"></i> Comprar
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- #9 - ACESSÓRIOS -->
+            <div class="product-card" data-category="acessorios">
+                <img src="img/Headset Gamer.jpg" alt="Headset Surround 7.1 Void" class="product-img">
+                <div class="product-info">
+                    <span class="product-category">acessorios</span>
+                    <h3 class="product-title">Headset Surround 7.1 Void</h3>
+                    <p class="product-desc">Drivers de 50mm, microfone com cancelamento de ruído e almofadas em espuma de memória.</p>
+                    <button type="button" class="desc-btn" onclick="openProductDetails(9)">
+                        <i class="fas fa-info-circle"></i> Descrição
+                    </button>
+                    <div class="product-footer">
+                        <span class="product-price">R$ 429,90</span>
+                        <button type="button" class="add-cart-btn" onclick="addToCart(9)">
+                            <i class="fas fa-cart-plus"></i> Comprar
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- #10 - ACESSÓRIOS -->
+            <div class="product-card" data-category="acessorios">
+                <img src="img/Mouse Pad.jpg" alt="Mousepad Speed XXL Nebula" class="product-img">
+                <div class="product-info">
+                    <span class="product-category">acessorios</span>
+                    <h3 class="product-title">Mousepad Speed XXL Nebula</h3>
+                    <p class="product-desc">900x400mm com bordas costuradas, base emborrachada antiderrapante e superfície de baixo atrito.</p>
+                    <button type="button" class="desc-btn" onclick="openProductDetails(10)">
+                        <i class="fas fa-info-circle"></i> Descrição
+                    </button>
+                    <div class="product-footer">
+                        <span class="product-price">R$ 119,90</span>
+                        <button type="button" class="add-cart-btn" onclick="addToCart(10)">
+                            <i class="fas fa-cart-plus"></i> Comprar
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- #11 - ACESSÓRIOS -->
+            <div class="product-card" data-category="acessorios">
+                <img src="img/Cadeira Gamer.jpg" alt="Cadeira Gamer Ergonomic Pulse" class="product-img">
+                <div class="product-info">
+                    <span class="product-category">acessorios</span>
+                    <h3 class="product-title">Cadeira Gamer Ergonomic Pulse</h3>
+                    <p class="product-desc">Reclinável até 180°, ajuste de altura a gás, apoio lombar e de pescoço e braços 4D.</p>
+                    <button type="button" class="desc-btn" onclick="openProductDetails(11)">
+                        <i class="fas fa-info-circle"></i> Descrição
+                    </button>
+                    <div class="product-footer">
+                        <span class="product-price">R$ 1.349,00</span>
+                        <button type="button" class="add-cart-btn" onclick="addToCart(11)">
+                            <i class="fas fa-cart-plus"></i> Comprar
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- #12 - ACESSÓRIOS -->
+            <div class="product-card" data-category="acessorios">
+                <img src="img/Microfone.jpg" alt="Microfone Gamer USB Cast Pro" class="product-img">
+                <div class="product-info">
+                    <span class="product-category">acessorios</span>
+                    <h3 class="product-title">Microfone Gamer USB Cast Pro</h3>
+                    <p class="product-desc">Captação cardioide cristalina para lives e calls, botão mute touch e iluminação LED.</p>
+                    <button type="button" class="desc-btn" onclick="openProductDetails(12)">
+                        <i class="fas fa-info-circle"></i> Descrição
+                    </button>
+                    <div class="product-footer">
+                        <span class="product-price">R$ 128,00</span>
+                        <button type="button" class="add-cart-btn" onclick="addToCart(12)">
+                            <i class="fas fa-cart-plus"></i> Comprar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AVALIAÇÕES -->
+    <section id="avaliacoes">
+        <h2 class="section-title">Avaliações dos Clientes</h2>
+        <p class="section-subtitle">Veja o que nossos clientes dizem sobre seus setups.</p>
+
+        <div class="reviews-grid">
+            <div class="review-card">
+                <img src="img/Jefferson.jpg" alt="Jefferson" class="review-avatar">
+                <div class="review-name">Jefferson</div>
+                <div class="review-stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p class="review-text">Comprei o PC Gamer Ryzen 5 e chegou super bem embalado! Rodando tudo no Ultra com FPS lá em cima. Recomendo demais.</p>
+            </div>
+
+            <div class="review-card">
+                <img src="img/Maria.png" alt="Maria" class="review-avatar">
+                <div class="review-name">Maria</div>
+                <div class="review-stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p class="review-text">O teclado mecânico RGB e o headset wireless mudaram completamente minha experiência nas lives. Atendimento nota 10!</p>
+            </div>
+
+            <div class="review-card">
+                <img src="img/Pedro.jpg" alt="Davi" class="review-avatar">
+                <div class="review-name">Davi</div>
+                <div class="review-stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
+                <p class="review-text">Paguei no Pix e o envio foi feito no mesmo dia. O mouse ultraleve tem uma precisão absurda no Valorant.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato">
+        <h2 class="section-title">Entre em Contato</h2>
+        <p class="section-subtitle">Dúvidas sobre montagem de PC ou pedidos? Mande uma mensagem.</p>
+
+        <div class="contact-container">
+            <form onsubmit="handleContact(event)">
+                <div class="form-group">
+                    <label for="contact-name">Seu Nome</label>
+                    <input id="contact-name" type="text" placeholder="Digite seu nome completo" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-email">Seu E-mail</label>
+                    <input id="contact-email" type="email" placeholder="seuemail@exemplo.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-subject">Assunto</label>
+                    <select id="contact-subject">
+                        <option>Orçamento de PC Gamer</option>
+                        <option>Dúvida sobre Produto</option>
+                        <option>Suporte / Garantia</option>
+                        <option>Outros</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="contact-message">Mensagem</label>
+                    <textarea id="contact-message" rows="4" placeholder="Como podemos ajudar você?" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary" style="width: 100%;">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <a href="#inicio" class="logo"><i class="fas fa-gamepad"></i> NEXTECH</a>
+                <p style="margin-top: 15px;">Sua loja definitiva de hardware, computadores gamers e acessórios de alta performance.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/nexustechgamer/" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://discord.gg/nexustechgamer" target="_blank" rel="noopener noreferrer" title="Discord"><i class="fab fa-discord"></i></a>
+                    <a href="https://www.tiktok.com/pt-BR/" target="_blank" rel="noopener noreferrer" title="Tiktok"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.facebook.com/?locale=pt_BR" target="_blank" rel="noopener noreferrer" title="Facebbok"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#catalogo">Catálogo</a></li>
+                    <li><a href="#avaliacoes">Avaliações</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Institucional</h4>
+                <ul>
+                    <li><a href="#contato">Política de Privacidade</a></li>
+                    <li><a href="#sobre">Termos de Garantia</a></li>
+                    <li><a href="#contato">Trocas e Devoluções</a></li>
+                    <li><a href="#contato">Rastrear Pedido</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Formas de Pagamento</h4>
+                <p><i class="fas fa-qrcode"></i> Pix (Aprovação Imediata)</p>
+                <p><i class="fas fa-credit-card"></i> Cartão de Crédito até 12x</p>
+                <p><i class="fas fa-money-check"></i> Cartão de Débito</p>
+                <p><i class="fas fa-barcode"></i> Boleto Bancário</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 NexTech Store. Todos os direitos reservados.
+        </div>
+    </footer>
+
+    <!-- BALÃO DE WHATSAPP FLUTUANTE -->
+    <div class="whatsapp-widget">
+        <div class="whatsapp-popup" id="wa-popup">
+            <div class="wa-header">
+                <div>
+                    <strong>Suporte NexTech</strong><br>
+                    <small>Online agora</small>
+                </div>
+                <button type="button" onclick="toggleWhatsApp()" class="wa-close-btn">&times;</button>
+            </div>
+            <div class="wa-body">
+                <div class="wa-msg">
+                    Olá, Cliente! 👋 Precisa de ajuda para escolher seu PC ou tirar alguma dúvida sobre nossos produtos?
+                </div>
+                <a href="https://wa.me/5511999999999?text=Olá!%20Vim%20pelo%20site%20da%20NexusTech%20e%20gostaria%20de%20ajuda." target="_blank" rel="noopener noreferrer" class="wa-link">
+                    <i class="fab fa-whatsapp"></i> Iniciar Conversa
+                </a>
+            </div>
+        </div>
+        <button type="button" class="whatsapp-btn" onclick="toggleWhatsApp()" title="Fale conosco no WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </button>
+    </div>
+
+    <!-- MODAL DE DESCRIÇÃO DO PRODUTO -->
+    <div class="modal-overlay" id="product-modal">
+        <div class="modal-box product-modal-box">
+            <button type="button" class="close-modal" onclick="closeModal('product-modal')">&times;</button>
+            <img src="" alt="" id="detail-img" class="detail-img">
+            <span class="product-category" id="detail-category"></span>
+            <h2 id="detail-title" class="detail-title"></h2>
+            <p id="detail-full-desc" class="detail-desc"></p>
+            <div id="detail-specs" class="detail-specs"></div>
+            <div class="detail-footer">
+                <span id="detail-price" class="product-price"></span>
+                <button type="button" class="add-cart-btn" id="detail-add-btn">
+                    <i class="fas fa-cart-plus"></i> Comprar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DE LOGIN -->
+    <div class="modal-overlay" id="login-modal">
+        <div class="modal-box">
+            <button type="button" class="close-modal" onclick="closeModal('login-modal')">&times;</button>
+            <h2 style="margin-bottom: 10px;">Acessar Conta</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 20px;">Entre para acompanhar seus pedidos e favoritos.</p>
+            <form onsubmit="handleLogin(event)">
+                <div class="form-group">
+                    <label for="login-email">E-mail</label>
+                    <input type="email" id="login-email" placeholder="gamer@nexustech.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Senha</label>
+                    <input type="password" id="login-password" placeholder="••••••••" required>
+                </div>
+                <button type="submit" class="btn-primary" style="width: 100%;">Entrar</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- MODAL DO CARRINHO E PAGAMENTO -->
+    <div class="modal-overlay" id="cart-modal">
+        <div class="modal-box">
+            <button type="button" class="close-modal" onclick="closeModal('cart-modal')">&times;</button>
+            <h2 style="margin-bottom: 15px;"><i class="fas fa-shopping-cart"></i> Seu Carrinho</h2>
+
+            <div id="cart-items-list">
+                <p style="color: var(--text-secondary);">Seu carrinho está vazio.</p>
+            </div>
+
+            <div class="cart-summary">
+                <div class="cart-total-row">
+                    <span>Total:</span>
+                    <span id="cart-total">R$ 0,00</span>
+                </div>
+
+                <label class="payment-label">Escolha a Forma de Pagamento:</label>
+                <div class="payment-methods">
+                    <label class="pay-option">
+                        <input type="radio" name="payment" value="Pix" checked onchange="handlePaymentChange()">
+                        <i class="fas fa-qrcode"></i> Pix
+                    </label>
+                    <label class="pay-option">
+                        <input type="radio" name="payment" value="Cartão de Crédito" onchange="handlePaymentChange()">
+                        <i class="fas fa-credit-card"></i> Crédito
+                    </label>
+                    <label class="pay-option">
+                        <input type="radio" name="payment" value="Cartão de Débito" onchange="handlePaymentChange()">
+                        <i class="fas fa-money-check"></i> Débito
+                    </label>
+                    <label class="pay-option">
+                        <input type="radio" name="payment" value="Boleto Bancário" onchange="handlePaymentChange()">
+                        <i class="fas fa-barcode"></i> Boleto
+                    </label>
+                </div>
+
+                <!-- Aviso informativo para Débito e Boleto -->
+                <div id="due-date-notice" class="due-date-notice" role="status" aria-live="polite">
+                    <i id="due-date-icon" class="fas fa-calendar-check"></i>
+                    <span id="due-date-text"></span>
+                </div>
+
+                <!-- Caixa do Pix com QR Code e Copia e Cola -->
+                <div id="pix-box" class="pix-box">
+                    <p class="pix-instruction">Escaneie o QR Code ou copie o código Pix para pagar:</p>
+                    <div id="pix-qrcode" class="pix-qrcode-container"></div>
+                    <div class="pix-copy-row">
+                        <input type="text" id="pix-code-input" readonly>
+                        <button type="button" class="pix-copy-btn" onclick="copyPixCode()" title="Copiar código Pix">
+                            <i class="fas fa-copy"></i> Copiar
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Opção de Parcelamento (aparece só no Crédito) -->
+                <div id="installments-box" class="form-group">
+                    <label for="installments-select">Parcelamento:</label>
+                    <select id="installments-select"></select>
+                </div>
+
+                <button type="button" class="btn-primary checkout-btn" onclick="checkout()">Finalizar Compra</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Biblioteca QRCode e JS Externo -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
