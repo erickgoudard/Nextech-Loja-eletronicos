@@ -1,65 +1,5 @@
-// 1. BANCO DE DADOS DE PRODUTOS GAMER (12 PRODUTOS)
-const products = [
-    // ================= COMPUTADORES E CONSOLES =================
-    {
-        id: 1,
-        name: "PC Gamer Completo Ryzen 5",
-        category: "Gamer",
-        price: 3799.89,
-        desc: "Intel Core i7 13700F, 32GB RAM DDR5, SSD NVMe 1TB, Water Cooler RGB e RTX 4070 12GB.",
-        fullDesc: "Montado e testado em bancada pela equipe NexTech para alto desempenho em Quad HD e Full HD competitivo. Conta com fluxo de ar otimizado, refrigeração líquida para manter os clocks estáveis e armazenamento NVMe de alta velocidade.",
-        warranty: "Garantia de 12 meses com suporte técnico NexusTech",
-        img: "img/computador.jpg"
-    },
-    {
-        id: 2,
-        name: "Nintendo Switch",
-        category: "Gamer",
-        price: 4299.00,
-        desc: "Console híbrido com controles Joy-Con, modo portátil e modo dock para TV com alta praticidade.",
-        fullDesc: "Jogue onde quiser no modo portátil ou conecte na TV para partidas em grupo. Ideal para títulos exclusivos e diversão em qualquer lugar.",
-        warranty: "Garantia de 12 meses com suporte técnico NexusTech",
-        img: "img/NINTENDO.jpg"
-    },
-    {
-        id: 3,
-        name: " Console Xbox Series X",
-        category: "Gamer",
-        price:8.29999,
-        desc: " SSD NVMe personalizado com a Xbox Velocity Architecture, reduzindo carregamentos e permitindo o recurso Quick Resume para alternar entre jogos rapidamente",
-        fullDesc: "CPU de 8 núcleos Zen 2 (até 3,8 GHz), GPU de 12 teraflops RDNA 2 e 16 GB de RAM GDDR6",
-        warranty: "Garantia de 12 meses com suporte técnico NexTech",
-        img: "img/XBOX.jpg"
-    },
-    {
-        id: 4,
-        name: "Console PlayStation 5 (PS5)",
-        category: "Gamer",
-        price: 6499.00,
-        desc: "SSD de alta velocidade, áudio 3D, suporte a Ray Tracing e controle DualSense com resposta tátil.",
-        fullDesc: "Projetado para imersão completa com gatilhos adaptáveis, resposta tátil e carregamentos quase instantâneos nos principais lançamentos.",
-        warranty: "Garantia de 12 meses com suporte técnico NexusTech",
-        img: "img/PS5.jpg"
-    },
-
-    // ================= ACESSÓRIOS =================
-    {
-        id: 5,
-        name: "Fone Bluetooth Roxo",
-        category: "acessorios",
-        price: 389.90,
-        desc: "Switches magnéticos ultra-rápidos, formato 65%, keycaps PBT Double-Shot e iluminação RGB.",
-        fullDesc: "Formato compacto 65% que libera mais espaço para o mouse em mesas reduzidas. Os switches magnéticos oferecem acionamento ágil e consistente, com keycaps PBT resistentes ao desgaste.",
-        warranty: "Garantia de 12 meses contra defeitos de fabricação",
-        img: "img/Fone.jpg"
-    },
-    {
-        id: 6,
-        name: "Mouse Gamer Wireless Viper Pro",
-        category: "perifericos",
-        price: 329.00,
-        desc: "Sensor óptico 26.000 DPI, peso ultraleve de 54g e bateria de até 70 horas sem fio.",
-        fullDesc: "Construção ultraleve de 54g para movimentos rápidos e menos fadiga em longas sessões. Conexão sem fio de baixa latência com autonomia de até 70 horas e sensor de alta precisão.",
+para oferecer maior precisão, rapidez de resposta e ergonomia em jogos, com sensores de alto desempenho.",
+        fullDesc: "Mouses ultraleves (cerca de 48 g a 60 g) favorecem jogos de tiro (FPS) com movimentos ágeis, enquanto modelos mais pesados ou com múltiplos botões atendem bem a jogos de estratégia, MMO ou uso misto.",
         warranty: "Garantia de 12 meses contra defeitos de fabricação",
         img: "img/Mouse.jpg"
     },
@@ -67,19 +7,19 @@ const products = [
         id: 7,
         name: "Placa Mae",
         category: "perifericos",
-        price: 2199.00,
-        desc: "Painel IPS 27 polegadas, resolução Quad HD, 240Hz, 1ms GTG e compatível com G-Sync.",
-        fullDesc: "Combina nitidez Quad HD com taxa de atualização de 240Hz e tempo de resposta de 1ms GTG. O painel IPS entrega cores vivas e amplos ângulos de visão, com suporte a G-Sync para reduzir cortes na imagem.",
-        warranty: "Garantia de 12 meses com suporte técnico NexusTech",
+        price: 1800.00,
+        desc: "placa-mãe é a placa de circuito impresso principal de um computador. Ela interliga e permite a comunicação entre processador (CPU), memória RAM, armazenamento, placa de vídeo e periféricos.",
+        fullDesc: "Definem quais processadores são compatíveis (por exemplo, soquete AM5 para AMD Ryzen com chipsets B650/B840, AM4 para Ryzen com A520/B550, ou LGA 1700 para Intel de 12ª a 14ª geração com chipsets.",
+        warranty: "Garantia de 12 meses com suporte técnico NexTech",
         img: "img/Placa Mae.jpg"
     },
     {
         id: 8,
-        name: "Teclado Mecânico TKL Shadow",
+        name: "Teclado Mecânico Branco",
         category: "perifericos",
-        price: 299.90,
-        desc: "Layout compacto TKL sem teclado numérico, switches lineares silenciosos e cabo USB-C removível.",
-        fullDesc: "Mantém as teclas de função e setas sem o bloco numérico, oferecendo ergonomia e espaço extra para o mouse. Switches lineares silenciosos e cabo USB-C destacável facilitam o transporte.",
+        price: 249.75,
+        desc: "combina interruptores mecânicos individuais sob cada tecla com acabamento na cor branca, oferecendo resposta tátil ou linear precisa para digitação e jogos, além de visual limpo que destaca a iluminação.",
+        fullDesc:"teclado mecânico branco incluem modelos compactos (60% e TKL) e full size (com teclado numérico), com variações de switches, iluminação e conexão com ou sem fio.",
         warranty: "Garantia de 12 meses contra defeitos de fabricação",
         img: "img/Teclado.jpg"
     },
@@ -87,41 +27,41 @@ const products = [
     // ================= ACESSÓRIOS =================
     {
         id: 9,
-        name: "Headset Surround 7.1 Void",
+        name: "Headset Gamer",
         category: "acessorios",
-        price: 449.90,
-        desc: "Drivers de 50mm, microfone com cancelamento de ruído e almofadas em espuma de memória.",
-        fullDesc: "Drivers de 50mm com som surround 7.1 para facilitar a localização de passos e efeitos no jogo. Almofadas em espuma de memória e microfone com cancelamento de ruído para chamadas claras.",
+        price: 299.99,
+        desc: " Fone de ouvido com microfone integrado projetado para jogos eletrônicos, comunicação em equipe, transmissões ao vivo (lives) e chamadas de voz.",
+        fullDesc: "modelo leve (menos de 300 g) com drivers de 50 mm, conexão P3 (3.5 mm), espuma de memória, microfone giratório para silenciar e suporte a DTS Headphone:X Spatial Audio.",
         warranty: "Garantia de 12 meses contra defeitos de fabricação",
         img: "img/Headset Gamer.jpg"
     },
     {
         id: 10,
-        name: "Mousepad Speed XXL Nebula",
+        name: "Mousepad ",
         category: "acessorios",
-        price: 119.90,
-        desc: "900x400mm com bordas costuradas, base emborrachada antiderrapante e superfície de baixo atrito.",
-        fullDesc: "Tamanho estendido de 900x400mm que acomoda teclado e mouse com folga. Superfície speed de baixo atrito para deslizes fluidos, bordas costuradas que não desfiam e base antiderrapante.",
-        warranty: "Garantia de 6 meses contra defeitos de fabricação",
+        price: 29.99,
+        desc: "Mousepad é uma superfície de apoio usada para posicionar e movimentar o mouse do computador, melhorando o deslize, a precisão do sensor e a proteção da mesa..",
+        fullDesc:"Deskpad extra grande (70 x 30 cm) com superfície speed, borda costurada e base antiderrapante no padrão de cores fumê.",
+        warranty: "Garantia de 6 meses contra defeitos de fabricação ápos a troca",
         img: "img/Mouse Pad.jpg"
     },
     {
         id: 11,
-        name: "Cadeira Gamer Ergonomic Pulse",
+        name: "Cadeira Gamer Vermelho",
         category: "acessorios",
-        price: 1349.00,
-        desc: "Reclinável até 180°, ajuste de altura a gás, apoio lombar e de pescoço e braços 4D.",
-        fullDesc: "Desenvolvida para longas horas de jogo, estudo ou trabalho. Possui encosto reclinável até 180°, pistão a gás, almofadas de apoio lombar e cervical e braços 4D ajustáveis.",
+        price: 398.34,
+        desc: "é um tipo de cadeira projetada para longos períodos sentados, com visual inspirado em bancos de carros esportivos e recursos voltados ao conforto e ao suporte corporal.",
+        fullDesc: "Modelo ergonômico com revestimento misto de mesh respirável e couro sintético, reclinação de até 135°, apoio de cabeça magnético, suporte lombar ajustável e braços 4D.",
         warranty: "Garantia de 12 meses na estrutura e mecanismo",
         img: "img/Cadeira Gamer.jpg"
     },
     {
         id: 12,
-        name: "Microfone Gamer USB Cast Pro",
+        name: "Microfone Gamer USB ",
         category: "acessorios",
-        price: 369.00,
-        desc: "Captação cardioide cristalina para lives e calls, botão mute touch e iluminação LED.",
-        fullDesc: "Captação cardioide focada na sua voz com redução de ruídos laterais. Conta com botão mute sensível ao toque, controle prático e iluminação LED para compor o setup.",
+        price: 317.40,
+        desc: "microfones gamer variam conforme o tipo de cápsula (dinâmica ou condensadora), padrão polar e conexão (USB-A, USB-C, P2 ou XLR), com opções de mesa ou com braço articulado.",
+        fullDesc: "Conexões USB / USB-C oferecem instalação rápida (plug and play) em PC e consoles; modelos com XLR permitem ligação a interfaces ou mesas de som para maior controle de áudio; entradas 3,5 mm (P2) são comuns em modelos básicos ou headsets.",
         warranty: "Garantia de 12 meses contra defeitos de fabricação",
         img: "img/microfone.jpg"
     }
