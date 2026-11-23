@@ -1,4 +1,64 @@
-para oferecer maior precisão, rapidez de resposta e ergonomia em jogos, com sensores de alto desempenho.",
+// 1. BANCO DE DADOS DE PRODUTOS GAMER (12 PRODUTOS)
+const products = [
+    // ================= COMPUTADORES E CONSOLES =================
+    {
+        id: 1,
+        name: "PC Gamer Completo Ryzen 5",
+        category: "Gamer",
+        price: 3087.39,
+        desc: "entrega ótimo custo-benefício de entrada com vídeo integrado Radeon Vega 7, rodando jogos competitivos e leves em Full HD sem placa de vídeo dedicada.",
+        fullDesc: "Montado e testado em bancada pela equipe NexTech para alto desempenho em Quad HD e Full HD competitivo. Conta com fluxo de ar otimizado, refrigeração líquida para manter os clocks estáveis e armazenamento NVMe de alta velocidade.",
+        warranty: "Garantia de 12 meses com suporte técnico NexTech",
+        img: "img/computador.jpg"
+    },
+    {
+        id: 2,
+        name: "Nintendo Switch",
+        category: "Gamer",
+        price: 2290.00,
+        desc: " Console de videogame híbrido da Nintendo, lançado em março de 2017, que funciona tanto como aparelho portátil quanto como console de mesa conectado à TV",
+        fullDesc: "A linha inclui o Nintendo Switch 2 (nova geração, lançado em junho de 2025) e os modelos da primeira geração (OLED, Padrão V1/V2 e Lite.",
+        warranty: "Garantia de 12 meses com suporte técnico NexTech",
+        img: "img/NINTENDO.jpg"
+    },
+    {
+        id: 3,
+        name: " Console Xbox Series X",
+        category: "Gamer",
+        price:8299.99,
+        desc: " SSD NVMe personalizado com a Xbox Velocity Architecture, reduzindo carregamentos e permitindo o recurso Quick Resume para alternar entre jogos rapidamente",
+        fullDesc: "CPU de 8 núcleos Zen 2 (até 3,8 GHz), GPU de 12 teraflops RDNA 2 e 16 GB de RAM GDDR6",
+        warranty: "Garantia de 12 meses com suporte técnico NexTech",
+        img: "img/XBOX.jpg"
+    },
+    {
+        id: 4,
+        name: "Console PlayStation 5 ",
+        category: "Gamer",
+        price: 5000.00,
+        desc: " Usa um SSD personalizado de alta velocidade (825 GB no modelo original e 1 TB no Slim) que reduz os tempos de carregamento e permite expansão via SSD NVMe M.2",
+        fullDesc: " Conta com CPU AMD Zen 2 de 8 núcleos (até 3,5 GHz), GPU AMD RDNA 2 com suporte a ray tracing e saída em até 4K (podendo chegar a 120 Hz em jogos compatíveis",
+        warranty: "Garantia de 12 meses com suporte técnico NexTech",
+        img: "img/PS5.jpg"
+    },
+
+    // ================= ACESSÓRIOS =================
+    {
+        id: 5,
+        name: "Fone Bluetooth Roxo",
+        category: "acessorios",
+        price: 30.47,
+        desc: "m dispositivo de áudio sem fio na cor roxa que transmite som por conexão Bluetooth, variando entre modelos intra-auriculares (TWS) e headphones de arco",
+        fullDesc: " headphone sem fio com cancelamento ativo de ruído híbrido de até 43 dB, Bluetooth 5.4 e bateria de até 60 horas de reprodução.",
+        warranty: "Garantia de 12 meses contra defeitos de fabricação ápos a troca",
+        img: "img/Fone.jpg"
+    },
+    {
+        id: 6,
+        name: "Mouse Gamer ",
+        category: "perifericos",
+        price: 900.00,
+        desc: "Mouse gamer é um periférico projetado para oferecer maior precisão, rapidez de resposta e ergonomia em jogos, com sensores de alto desempenho.",
         fullDesc: "Mouses ultraleves (cerca de 48 g a 60 g) favorecem jogos de tiro (FPS) com movimentos ágeis, enquanto modelos mais pesados ou com múltiplos botões atendem bem a jogos de estratégia, MMO ou uso misto.",
         warranty: "Garantia de 12 meses contra defeitos de fabricação",
         img: "img/Mouse.jpg"
@@ -8,7 +68,7 @@ para oferecer maior precisão, rapidez de resposta e ergonomia em jogos, com sen
         name: "Placa Mae",
         category: "perifericos",
         price: 1800.00,
-        desc: "placa-mãe é a placa de circuito impresso principal de um computador. Ela interliga e permite a comunicação entre processador (CPU), memória RAM, armazenamento, placa de vídeo e periféricos.",
+        desc: "Placa Mae é a placa de circuito impresso principal de um computador. Ela interliga e permite a comunicação entre processador (CPU), memória RAM, armazenamento, placa de vídeo e periféricos.",
         fullDesc: "Definem quais processadores são compatíveis (por exemplo, soquete AM5 para AMD Ryzen com chipsets B650/B840, AM4 para Ryzen com A520/B550, ou LGA 1700 para Intel de 12ª a 14ª geração com chipsets.",
         warranty: "Garantia de 12 meses com suporte técnico NexTech",
         img: "img/Placa Mae.jpg"
