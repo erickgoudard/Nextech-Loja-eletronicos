@@ -6,13 +6,13 @@
     --text-primary: #f8fafc;
     --text-secondary: #94a3b8;
     --accent-purple: #0018f2;
-    --accent-purple-hover: #8a07fc;
-    --accent-cyan: #05a983;
+    --accent-purple-hover: #02007e;
+    --accent-cyan: #00c194;
     --accent-gradient: linear-gradient(135deg, #8b5cf6 0%, #7d00a7 100%);
     --border-color: #2a354d;
     --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
     --hero-glow-purple: rgba(73, 0, 243, 0.35);
-    --hero-glow-cyan: rgba(6, 182, 212, 0.15);
+    --hero-glow-cyan: rgba(0, 100, 118, 0.69);
 }
 
 /* ================= VARIÁVEIS DO TEMA CLARO ================= */
@@ -140,6 +140,50 @@ nav ul li a:hover {
     transform: translateY(-2px);
 }
 
+/* Botão Login: fundo azul */
+.icon-btn.btn-login {
+    background-color: #2563eb;
+    border-color: #1d4ed8;
+    color: #ffffff;
+}
+
+.icon-btn.btn-login:hover {
+    background-color: #1d4ed8;
+}
+
+/* Botão Carrinho: fundo verde */
+.icon-btn.btn-cart {
+    background-color: #16a34a;
+    border-color: #15803d;
+    color: #ffffff;
+}
+
+.icon-btn.btn-cart:hover {
+    background-color: #15803d;
+}
+
+/* Botão Tema (Escuro padrão): fundo roxo */
+#theme-toggle {
+    background-color: #7c3aed;
+    border-color: #6d28d9;
+    color: #ffffff;
+}
+
+#theme-toggle:hover {
+    background-color: #6d28d9;
+}
+
+/* Botão Tema (Tema claro ativo): fundo amarelo */
+body.light-mode #theme-toggle {
+    background-color: #facc15;
+    border-color: #eab308;
+    color: #0f172a;
+}
+
+body.light-mode #theme-toggle:hover {
+    background-color: #eab308;
+}
+
 .cart-badge {
     background: var(--accent-gradient);
     color: #ffffff;
@@ -178,7 +222,7 @@ nav ul li a:hover {
 
 .hero p {
     color: var(--text-secondary);
-    font-size: 1.08rem;
+    font-size: 1.25rem;
     line-height: 1.65;
     margin-bottom: 30px;
 }
@@ -206,7 +250,7 @@ nav ul li a:hover {
 }
 
 .hero-image {
-    flex: 0 1 540px;
+    flex: 0 1 600px;
     display: flex;
     justify-content: center;
 }
@@ -232,11 +276,14 @@ section {
     margin-bottom: 10px;
 }
 
+/* TEXTO EMBAIXO DO TÍTULO DO CATÁLOGO */
 .section-subtitle {
     text-align: center;
     color: var(--text-secondary);
-    max-width: 650px;
-    margin: 0 auto 50px;
+    font-size: 1.35rem;
+    max-width: 780px;
+    margin: 0 auto 45px;
+    line-height: 1.5;
 }
 
 /* ================= SEÇÃO SOBRE ================= */
@@ -262,7 +309,7 @@ section {
 
 .about-card i {
     font-size: 2.5rem;
-    background: var(--accent-gradient);
+    background: linear-gradient(135deg, #ff4d4d 0%, #b91c1c 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -277,16 +324,17 @@ section {
 
 .about-card p {
     color: var(--text-secondary);
-    font-size: 0.95rem;
+    font-size: 1.15rem;
     line-height: 1.55;
 }
 
 /* ================= SEÇÃO CATÁLOGO ================= */
+/* BOTÕES DE FILTRO DO CATÁLOGO */
 .catalog-filters {
     display: flex;
     justify-content: center;
-    gap: 16px;
-    margin-bottom: 40px;
+    gap: 10px;
+    margin-bottom: 42px;
     flex-wrap: wrap;
 }
 
@@ -294,11 +342,11 @@ section {
     background: var(--bg-card);
     color: var(--text-primary);
     border: 1px solid var(--border-color);
-    padding: 16px 34px;
-    min-width: 155px;
-    font-size: 1.08rem;
+    padding: 20px 10px;
+    min-width: 180px;
+    font-size: 1.30rem;
     letter-spacing: 0.4px;
-    border-radius: 12px;
+    border-radius: 14px;
     cursor: pointer;
     font-weight: 700;
     transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease, transform 0.2s ease;
@@ -474,6 +522,12 @@ section {
 }
 
 /* ================= SEÇÃO AVALIAÇÕES ================= */
+#avaliacoes .section-subtitle {
+    font-size: 1.7rem;
+    max-width: 780px;
+    line-height: 1.5;
+}
+
 .reviews-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -502,21 +556,21 @@ section {
 
 .review-name {
     font-weight: 700;
-    font-size: 1.08rem;
+    font-size: 1.2rem;
     margin-bottom: 6px;
 }
 
 .review-stars {
     color: #fbbf24;
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-bottom: 14px;
 }
 
 .review-text {
     color: var(--text-secondary);
-    font-size: 0.95rem;
+    font-size: 1.35rem;
     font-style: italic;
-    line-height: 1.55;
+    line-height: 1.6;
 }
 
 /* ================= SEÇÃO CONTATO ================= */
