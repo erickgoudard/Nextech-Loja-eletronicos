@@ -32,11 +32,11 @@
                 <i class="fas fa-sun" id="theme-icon"></i>
             </button>
 
-            <button type="button" class="icon-btn" onclick="openModal('login-modal')">
+            <button type="button" class="icon-btn btn-login" onclick="openModal('login-modal')">
                 <i class="fas fa-user"></i> <span id="user-label">Login</span>
             </button>
 
-            <button type="button" class="icon-btn" onclick="openModal('cart-modal')">
+            <button type="button" class="icon-btn btn-cart" onclick="openModal('cart-modal')">
                 <i class="fas fa-shopping-cart"></i>
                 <span class="cart-badge" id="cart-count">0</span>
             </button>
@@ -86,7 +86,7 @@
     <!-- CATÁLOGO -->
     <section id="catalogo">
         <h2 class="section-title">Catálogo </h2>
-        <p class="section-subtitle">Escolha os melhores equipamentos para a sua máquina.</p>
+        <p class="section-subtitle">Encontre tudo o que você precisa para montar sua máquina com qualidade, desempenho e eficiência.</p>
 
         <div class="catalog-filters">
             <button type="button" class="filter-btn active" onclick="filterProducts('todos', this)">Todos</button>
@@ -96,9 +96,9 @@
         </div>
 
         <div class="products-grid" id="products-container">
-            <!-- #1 - gamer -->
-            <div class="product-card" data-category="gamer">
-                <img src="" alt="PC Gamer Valkyrie RTX 4070" class="product-img">
+            <!-- #1 - Gamer -->
+            <div class="product-card" data-category="Gamer">
+                <img src="img/Computador.jpg" alt="PC Gamer Valkyrie RTX 4070" class="product-img">
                 <div class="product-info">
                     <span class="product-category">gamer</span>
                     <h3 class="product-title">PC Gamer Completo </h3>
@@ -107,7 +107,7 @@
                         <i class="fas fa-info-circle"></i> Descrição
                     </button>
                     <div class="product-footer">
-                        <span class="product-price">R$ 3.799,98</span>
+                        <span class="product-price">R$ 3.087,39</span>
                         <button type="button" class="add-cart-btn" onclick="addToCart(1)">
                             <i class="fas fa-cart-plus"></i> Comprar
                         </button>
@@ -115,13 +115,13 @@
                 </div>
             </div>
 
-            <!-- #2 - COMPUTADORES -->
+            <!-- #2 - Gamer -->
             <div class="product-card" data-category="computadores">
-                <img src="img/nintendo-switch.webp" alt="PC Gamer Starter Ryzen 5" class="product-img">
+                <img src="img/nintendo-switch.webp" alt="Nintendo Switch" class="product-img">
                 <div class="product-info">
-                    <span class="product-category">computadores</span>
-                    <h3 class="product-title">PC Gamer Starter Ryzen 5</h3>
-                    <p class="product-desc">AMD Ryzen 5 5600, 16GB RAM DDR4, SSD 512GB, RTX 4060 8GB. Ideal para jogos competitivos.</p>
+                    <span class="product-category">Gamer</span>
+                    <h3 class="product-title">Nintendo Switc</h3>
+                    <p class="product-desc">O Nintendo Switch é um console híbrido que funciona nos modos TV, semiportátil e portátil, com controles Joy-Con destacáveis e suporte a jogos físicos e digitais</p>
                     <button type="button" class="desc-btn" onclick="openProductDetails(2)">
                         <i class="fas fa-info-circle"></i> Descrição
                     </button>
