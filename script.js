@@ -9,7 +9,7 @@ const products = [
         desc: "entrega ótimo custo-benefício de entrada com vídeo integrado Radeon Vega 7, rodando jogos competitivos e leves em Full HD sem placa de vídeo dedicada.",
         fullDesc: "Montado e testado em bancada pela equipe NexTech para alto desempenho em Quad HD e Full HD competitivo. Conta com fluxo de ar otimizado, refrigeração líquida para manter os clocks estáveis e armazenamento NVMe de alta velocidade.",
         warranty: "Garantia de 12 meses com suporte técnico NexTech",
-        img: "computador.jpg"
+        img: "Computador.jpg"
     },
     {
         id: 2,
