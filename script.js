@@ -48,7 +48,7 @@ const products = [
         name: "Fone Bluetooth Roxo",
         category: "acessorios",
         price: 30.47,
-        desc: "m dispositivo de áudio sem fio na cor roxa que transmite som por conexão Bluetooth, variando entre modelos intra-auriculares (TWS) e headphones de arco",
+        desc: " Dispositivo de áudio sem fio na cor roxa que transmite som por conexão Bluetooth, variando entre modelos intra-auriculares (TWS) e headphones de arco",
         fullDesc: " headphone sem fio com cancelamento ativo de ruído híbrido de até 43 dB, Bluetooth 5.4 e bateria de até 60 horas de reprodução.",
         warranty: "Garantia de 12 meses contra defeitos de fabricação ápos a troca",
         img: "Fone.jpg"
