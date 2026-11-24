@@ -9,7 +9,7 @@ const products = [
         desc: "entrega ótimo custo-benefício de entrada com vídeo integrado Radeon Vega 7, rodando jogos competitivos e leves em Full HD sem placa de vídeo dedicada.",
         fullDesc: "Montado e testado em bancada pela equipe NexTech para alto desempenho em Quad HD e Full HD competitivo. Conta com fluxo de ar otimizado, refrigeração líquida para manter os clocks estáveis e armazenamento NVMe de alta velocidade.",
         warranty: "Garantia de 12 meses com suporte técnico NexTech",
-        img: "img/computador.jpg"
+        img: "computador.jpg"
     },
     {
         id: 2,
@@ -19,7 +19,7 @@ const products = [
         desc: " Console de videogame híbrido da Nintendo, lançado em março de 2017, que funciona tanto como aparelho portátil quanto como console de mesa conectado à TV",
         fullDesc: "A linha inclui o Nintendo Switch 2 (nova geração, lançado em junho de 2025) e os modelos da primeira geração (OLED, Padrão V1/V2 e Lite.",
         warranty: "Garantia de 12 meses com suporte técnico NexTech",
-        img: "img/NINTENDO.jpg"
+        img: "NINTENDO.jpg"
     },
     {
         id: 3,
@@ -29,7 +29,7 @@ const products = [
         desc: " SSD NVMe personalizado com a Xbox Velocity Architecture, reduzindo carregamentos e permitindo o recurso Quick Resume para alternar entre jogos rapidamente",
         fullDesc: "CPU de 8 núcleos Zen 2 (até 3,8 GHz), GPU de 12 teraflops RDNA 2 e 16 GB de RAM GDDR6",
         warranty: "Garantia de 12 meses com suporte técnico NexTech",
-        img: "img/XBOX.jpg"
+        img: "XBOX.jpg"
     },
     {
         id: 4,
@@ -39,7 +39,7 @@ const products = [
         desc: " Usa um SSD personalizado de alta velocidade (825 GB no modelo original e 1 TB no Slim) que reduz os tempos de carregamento e permite expansão via SSD NVMe M.2",
         fullDesc: " Conta com CPU AMD Zen 2 de 8 núcleos (até 3,5 GHz), GPU AMD RDNA 2 com suporte a ray tracing e saída em até 4K (podendo chegar a 120 Hz em jogos compatíveis",
         warranty: "Garantia de 12 meses com suporte técnico NexTech",
-        img: "img/PS5.jpg"
+        img: "PS5.jpg"
     },
 
     // ================= ACESSÓRIOS =================
@@ -51,7 +51,7 @@ const products = [
         desc: "m dispositivo de áudio sem fio na cor roxa que transmite som por conexão Bluetooth, variando entre modelos intra-auriculares (TWS) e headphones de arco",
         fullDesc: " headphone sem fio com cancelamento ativo de ruído híbrido de até 43 dB, Bluetooth 5.4 e bateria de até 60 horas de reprodução.",
         warranty: "Garantia de 12 meses contra defeitos de fabricação ápos a troca",
-        img: "img/Fone.jpg"
+        img: "Fone.jpg"
     },
     {
         id: 6,
@@ -61,7 +61,7 @@ const products = [
         desc: "Mouse gamer é um periférico projetado para oferecer maior precisão, rapidez de resposta e ergonomia em jogos, com sensores de alto desempenho.",
         fullDesc: "Mouses ultraleves (cerca de 48 g a 60 g) favorecem jogos de tiro (FPS) com movimentos ágeis, enquanto modelos mais pesados ou com múltiplos botões atendem bem a jogos de estratégia, MMO ou uso misto.",
         warranty: "Garantia de 12 meses contra defeitos de fabricação",
-        img: "img/Mouse.jpg"
+        img: "Mouse.jpg"
     },
     {
         id: 7,
@@ -71,7 +71,7 @@ const products = [
         desc: "Placa Mae é a placa de circuito impresso principal de um computador. Ela interliga e permite a comunicação entre processador (CPU), memória RAM, armazenamento, placa de vídeo e periféricos.",
         fullDesc: "Definem quais processadores são compatíveis (por exemplo, soquete AM5 para AMD Ryzen com chipsets B650/B840, AM4 para Ryzen com A520/B550, ou LGA 1700 para Intel de 12ª a 14ª geração com chipsets.",
         warranty: "Garantia de 12 meses com suporte técnico NexTech",
-        img: "img/Placa Mae.jpg"
+        img: "Placa Mae.jpg"
     },
     {
         id: 8,
@@ -81,7 +81,7 @@ const products = [
         desc: "combina interruptores mecânicos individuais sob cada tecla com acabamento na cor branca, oferecendo resposta tátil ou linear precisa para digitação e jogos, além de visual limpo que destaca a iluminação.",
         fullDesc:"teclado mecânico branco incluem modelos compactos (60% e TKL) e full size (com teclado numérico), com variações de switches, iluminação e conexão com ou sem fio.",
         warranty: "Garantia de 12 meses contra defeitos de fabricação",
-        img: "img/Teclado.jpg"
+        img: "Teclado.jpg"
     },
 
     // ================= ACESSÓRIOS =================
@@ -93,7 +93,7 @@ const products = [
         desc: " Fone de ouvido com microfone integrado projetado para jogos eletrônicos, comunicação em equipe, transmissões ao vivo (lives) e chamadas de voz.",
         fullDesc: "modelo leve (menos de 300 g) com drivers de 50 mm, conexão P3 (3.5 mm), espuma de memória, microfone giratório para silenciar e suporte a DTS Headphone:X Spatial Audio.",
         warranty: "Garantia de 12 meses contra defeitos de fabricação",
-        img: "img/Headset Gamer.jpg"
+        img: "Headset Gamer.jpg"
     },
     {
         id: 10,
@@ -103,7 +103,7 @@ const products = [
         desc: "Mousepad é uma superfície de apoio usada para posicionar e movimentar o mouse do computador, melhorando o deslize, a precisão do sensor e a proteção da mesa..",
         fullDesc:"Deskpad extra grande (70 x 30 cm) com superfície speed, borda costurada e base antiderrapante no padrão de cores fumê.",
         warranty: "Garantia de 6 meses contra defeitos de fabricação ápos a troca",
-        img: "img/Mouse Pad.jpg"
+        img: "Mouse Pad.jpg"
     },
     {
         id: 11,
@@ -113,7 +113,7 @@ const products = [
         desc: "é um tipo de cadeira projetada para longos períodos sentados, com visual inspirado em bancos de carros esportivos e recursos voltados ao conforto e ao suporte corporal.",
         fullDesc: "Modelo ergonômico com revestimento misto de mesh respirável e couro sintético, reclinação de até 135°, apoio de cabeça magnético, suporte lombar ajustável e braços 4D.",
         warranty: "Garantia de 12 meses na estrutura e mecanismo",
-        img: "img/Cadeira Gamer.jpg"
+        img: "Cadeira Gamer.jpg"
     },
     {
         id: 12,
@@ -123,7 +123,7 @@ const products = [
         desc: "microfones gamer variam conforme o tipo de cápsula (dinâmica ou condensadora), padrão polar e conexão (USB-A, USB-C, P2 ou XLR), com opções de mesa ou com braço articulado.",
         fullDesc: "Conexões USB / USB-C oferecem instalação rápida (plug and play) em PC e consoles; modelos com XLR permitem ligação a interfaces ou mesas de som para maior controle de áudio; entradas 3,5 mm (P2) são comuns em modelos básicos ou headsets.",
         warranty: "Garantia de 12 meses contra defeitos de fabricação",
-        img: "img/microfone.jpg"
+        img: "Microfone.jpg"
     }
 ];
 
