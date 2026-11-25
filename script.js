@@ -6,7 +6,7 @@ const products = [
         name: "PC Gamer Completo Ryzen 5",
         category: "Gamer",
         price: 3087.39,
-        desc: "entrega ótimo custo-benefício de entrada com vídeo integrado Radeon Vega 7, rodando jogos competitivos e leves em Full HD sem placa de vídeo dedicada.",
+        desc: "O PC Gamer entrega  um ótimo custo-benefício de entrada com vídeo integrado Radeon Vega 7, rodando jogos competitivos e leves em Full HD sem placa de vídeo dedicada.",
         fullDesc: "Montado e testado em bancada pela equipe NexTech para alto desempenho em Quad HD e Full HD competitivo. Conta com fluxo de ar otimizado, refrigeração líquida para manter os clocks estáveis e armazenamento NVMe de alta velocidade.",
         warranty: "Garantia de 12 meses com suporte técnico NexTech",
         img: "Computador.jpg"
@@ -36,8 +36,8 @@ const products = [
         name: "Console PlayStation 5 ",
         category: "Gamer",
         price: 5000.00,
-        desc: " Usa um SSD personalizado de alta velocidade (825 GB no modelo original e 1 TB no Slim) que reduz os tempos de carregamento e permite expansão via SSD NVMe M.2",
-        fullDesc: " Conta com CPU AMD Zen 2 de 8 núcleos (até 3,5 GHz), GPU AMD RDNA 2 com suporte a ray tracing e saída em até 4K (podendo chegar a 120 Hz em jogos compatíveis",
+        desc: " O PlayStation 5  é um console de videogame desenvolvido pela Sony, focado em carregamentos rápidos, gráficos em alta resolução e imersão sensorial. Ele é compatível com jogos de PS4 e com o PlayStation VR2",
+        fullDesc: "  Suporta resolução de até 4K, tecnologia Ray tracing (iluminação, sombras e reflexos realistas), cores HDR e taxas de até 120 fps em jogos compatíveis.",
         warranty: "Garantia de 12 meses com suporte técnico NexTech",
         img: "PS5.jpg"
     },
@@ -78,8 +78,8 @@ const products = [
         name: "Teclado Mecânico Branco",
         category: "perifericos",
         price: 249.75,
-        desc: "combina interruptores mecânicos individuais sob cada tecla com acabamento na cor branca, oferecendo resposta tátil ou linear precisa para digitação e jogos, além de visual limpo que destaca a iluminação.",
-        fullDesc:"teclado mecânico branco incluem modelos compactos (60% e TKL) e full size (com teclado numérico), com variações de switches, iluminação e conexão com ou sem fio.",
+        desc: " O Teclado Mecânico combina  com interruptores mecânicos individuais sob cada tecla com acabamento na cor branca, oferecendo resposta tátil ou linear precisa para digitação e jogos, além de visual limpo que destaca a iluminação.",
+        fullDesc:"Teclado Mecânico branco incluem modelos compactos (60% e TKL) e full size (com teclado numérico), com variações de switches, iluminação e conexão com ou sem fio.",
         warranty: "Garantia de 12 meses contra defeitos de fabricação",
         img: "Teclado.jpg"
     },
@@ -110,7 +110,7 @@ const products = [
         name: "Cadeira Gamer Vermelho",
         category: "acessorios",
         price: 398.34,
-        desc: "é um tipo de cadeira projetada para longos períodos sentados, com visual inspirado em bancos de carros esportivos e recursos voltados ao conforto e ao suporte corporal.",
+        desc: "  Cadeira Gamer é tipo de cadeira projetada para longos períodos sentados, com visual inspirado em bancos de carros esportivos e recursos voltados ao conforto e ao suporte corporal.",
         fullDesc: "Modelo ergonômico com revestimento misto de mesh respirável e couro sintético, reclinação de até 135°, apoio de cabeça magnético, suporte lombar ajustável e braços 4D.",
         warranty: "Garantia de 12 meses na estrutura e mecanismo",
         img: "Cadeira Gamer.jpg"
