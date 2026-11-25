@@ -26,8 +26,8 @@ const products = [
         name: " Console Xbox Series X",
         category: "Gamer",
         price:8299.99,
-        desc: " SSD NVMe personalizado com a Xbox Velocity Architecture, reduzindo carregamentos e permitindo o recurso Quick Resume para alternar entre jogos rapidamente",
-        fullDesc: "CPU de 8 núcleos Zen 2 (até 3,8 GHz), GPU de 12 teraflops RDNA 2 e 16 GB de RAM GDDR6",
+        desc: "O Xbox Series X é o console doméstico mais potente da linha de nona geração da Microsoft, projetado para jogos em resolução 4K nativa a até 120 FPS, com suporte a Ray Tracing e carregamentos rápidos via SSD NVMe personalizado ",
+        fullDesc: "AMD Zen 2 personalizado de 8 núcleos a até 3,8 GHz (3,6 GHz com SMT).",
         warranty: "Garantia de 12 meses com suporte técnico NexTech",
         img: "XBOX.jpg"
     },
@@ -48,8 +48,8 @@ const products = [
         name: "Fone Bluetooth Roxo",
         category: "acessorios",
         price: 30.47,
-        desc: " Dispositivo de áudio sem fio na cor roxa que transmite som por conexão Bluetooth, variando entre modelos intra-auriculares (TWS) e headphones de arco",
-        fullDesc: " headphone sem fio com cancelamento ativo de ruído híbrido de até 43 dB, Bluetooth 5.4 e bateria de até 60 horas de reprodução.",
+        desc: "Um fone de ouvido Bluetooth roxo, sem fio e pequeno geralmente é um modelo intra-auricular (TWS) compacto, leve e discreto, ideal para uso no dia a dia, treinos ou transporte fácil no bolso ",
+        fullDesc: " Funcionam via Bluetooth ( como verões 5.3 ou 5.4) dispensando cabos e permintindo paramento rapido com smasthofones, Tabletes e Notebooks.",
         warranty: "Garantia de 12 meses contra defeitos de fabricação ápos a troca",
         img: "Fone.jpg"
     },
@@ -91,7 +91,7 @@ const products = [
         category: "acessorios",
         price: 299.99,
         desc: " Fone de ouvido com microfone integrado projetado para jogos eletrônicos, comunicação em equipe, transmissões ao vivo (lives) e chamadas de voz.",
-        fullDesc: "modelo leve (menos de 300 g) com drivers de 50 mm, conexão P3 (3.5 mm), espuma de memória, microfone giratório para silenciar e suporte a DTS Headphone:X Spatial Audio.",
+        fullDesc: "Modelo leve (menos de 300 g) com drivers de 50 mm, conexão P3 (3.5 mm), espuma de memória, microfone giratório para silenciar e suporte a DTS Headphone:X Spatial Audio.",
         warranty: "Garantia de 12 meses contra defeitos de fabricação",
         img: "Headset Gamer.jpg"
     },
